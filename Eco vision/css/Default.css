@@ -1,0 +1,169 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+nav table{
+    width: 100%;
+    margin: auto;
+    background-color: green;
+    height: 10px;
+}
+nav td a{
+    text-decoration: none; 
+    color: white; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.banner{
+    width: 100%;
+    margin: auto;
+}
+.noHyper{
+    text-decoration: none; 
+    color: black;
+}
+
+footer{
+    background-color: rgb(44, 44, 44); 
+    color: white;
+
+}
+.logo{
+    width: 25%; 
+    height: auto; 
+    display: block;
+}
+#login{
+    margin-left: 90%;
+    margin-top: 1%;
+
+}
+
+
+.productss {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    gap: 10px; /* Space between products */
+    justify-content: space-around; /* Distributes items evenly */
+    text-align: center;
+}
+
+.product {
+    width: 150px; /* Set a fixed width for each product */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    height: 100px;
+    width: 100px;
+}
+
+.product h5 {
+    font-size: 12px; /* Change text size */
+    
+    color: #000000; /* Change text color */
+    text-align: center; /* Center the text */
+     /* Make text uppercase */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Change font style */
+    margin-top: 10px; /* Add spacing above the text */
+}
+
+.navigation{
+    font-family: Arial, Helvetica, sans-serif
+}
