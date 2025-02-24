@@ -2,23 +2,43 @@
 <html lang="en">
 <html>
     <head>
+
         <meta charset="UTF-8">
         <Title> Products Page</Title>
         <link rel="icon" type="image/png" href ="images/favicon.png">
+        <link rel="stylesheet" href="css/Default.css">
     </head>
 
     <body>
         <header>
-            <img src="images/Logo.png" alt="Ecovision Logo" style="width: 25%; height: auto; display: block; ">   
+        <!-- Logo Banner-->
+            <img src="images/Logo.png" alt="Ecovision Logo"  class="logo"> 
+        <!-- Login-->
+
+            <form name = "login"  id = "login">
+                <input type="text" placeholder="Email or Username">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <input type="submit" value="Login">
+                <button onclick="Resgister()"> Resgister </button>
+            </form>
+        <!-- Search Bar-->
+         <form name="Search Bar" id="Search">
+            <input type="search" id="searchbar" placeholder="Product or Page">
+
+         </form>
         </header>
-        <nav>
-            <table style= "width: 100%; margin: auto; background-color: green; color:white">
+
+
+        <nav class="navigation">
+            <table>
                 <tr>
-                    <td> <a href ="Home.html" style="text-decoration: none; color: white;"> Ecovision</a> </td>
-                    <td><a href ="Sales & Limited edition.html" style="text-decoration: none; color: white;">Sales & Limited edition</a></td>
-                    <td><a href = "Products.html" style="text-decoration: none; color: white;">Products</a></td>
-                    <td> <a href = "About Us.html" style="text-decoration: none; color: white;">About Us</a></td>
-                    <td><a href = "Contact.html" style="text-decoration: none; color: white;">Contact </a></td>
+                    <td> <a href ="Home.html"> Ecovision</a> </td>
+                    <td><a href ="Sales & Limited edition.html">Sales & Limited edition</a></td>
+                    <td><a href = "Products.html">Products</a></td>
+                    <td> <a href = "About Us.html">About Us</a></td>
+                    <td><a href = "Contact.html">Contact </a></td>
 
                 </tr>
             </table>
@@ -34,13 +54,13 @@
         --> 
          <main>
             <section>
+                <img src ="images/Banner.png" class = "banner">
 
-                <img src = "images/Banner.png " style="width: 100%; height: auto;">
                 <h2>Where Fitness Meets Sustainability  🌱</h2>
             </section>
 
             <article>
-                <a href="Sales & Limited edition.html" style="text-decoration: none; color: black;"> <h1> EXCLUSIVE DEALS</h1> </a>
+                <a href="Sales & Limited edition.html" class="noHyper"> <h1> EXCLUSIVE DEALS</h1> </a>
                 <section>
                     <img src="images/Blue Gym Shirt.jpg" alt="Ocean Gym Shirt" style="height: 100px; width: 100px;">
                     <h5>Ethically sourced Ocean Gym Shirt made Locally</h5>                
@@ -50,41 +70,46 @@
             <hr>
             
             <section>
-                <a href="Products.html" style="text-decoration: none; color: black;"> <h1> Our products</h1> </a>
-                 
-                <section>
-                    <img src="images/protein-powders.jpg" alt="Protein Powders" style="height: 100px; width: 100px;">
-                    <h5>Protein Powder 1.5kg</h5>                
-                    <p> $39.97</p>
-                </section>
-                <section>
-                    <img src="images/White Gym Shirt.jpg" alt="White Gym Shirt" style="height: 100px; width: 100px;">
-                    <h5>Ethically sourced Gym Shirt made Locally</h5>                
-                    <p> $24.99</p>
-                </section>
-                <section>
-                    <img src="images/Black Gym Shirt.jpg" alt="Black Gym Shirt" style="height: 100px; width: 100px;">
-                    <h5>Ethically sourced Black Gym Shirt made Locally</h5>                
-                    <p> $24.99</p>
-                </section>
-                <section>
-                    <img src="images/Shaker Bottle.jpg" alt="Shaker Bottle" style="height: 100px; width: 100px;">
-                    <h5>100% recycled plastic Shaker Bottle</h5>                
-                    <p> $30.00</p>
+                <a href="Products.html" class="noHyper"> <h1> Our products</h1> </a>
+                
+                <section class="productss">   
+                    <div class="product">
+                        <img src="images/protein-powders.jpg" alt="Protein Powders">
+                        <h5>Protein Powder 1.5kg</h5>                
+                        <p>$39.97</p>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="images/White Gym Shirt.jpg" alt="White Gym Shirt">
+                        <h5>Ethically sourced Gym Shirt made Locally</h5>                
+                        <p>$24.99</p>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="images/Black Gym Shirt.jpg" alt="Black Gym Shirt">
+                        <h5>Ethically sourced Black Gym Shirt made Locally</h5>                
+                        <p>$24.99</p>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="images/Shaker Bottle.jpg" alt="Shaker Bottle">
+                        <h5>100% recycled plastic Shaker Bottle</h5>                
+                        <p>$30.00</p>
+                    </div>
                 </section>
             </section>
             <hr>
 
 
             <section>
-                <a href="About Us.html" style="text-decoration: none; color: black;"> <h1> Eco-Vision's Goal</h1> </a>
+                <a href="About Us.html" class="noHyper"> <h1> Eco-Vision's Goal</h1> </a>
                 <p> We founded this eco-friendly company with one goal in mind: to reduce waste and promote a sustainable future. Over the years, we’ve committed ourselves to developing products and services that minimize environmental impact, while inspiring individuals to join us in making the world a greener place.                </p>
             </section>
             <hr>
 
 
             <section>
-               <a href="Contact.html" style="text-decoration: none; color: black;"> <h1> Contact us!</h1> </a> 
+               <a href="Contact.html" class="noHyper"> <h1> Contact us!</h1> </a> 
             </section>
             
 
@@ -100,7 +125,21 @@
 
 
 
-        <footer style="background-color: rgb(44, 44, 44); color: white;">
+        <footer>
+
+            <!-- Feedback-->
+
+            <form name="feedback" id="feedback">
+                <input type ="button" value = "Send us your feedback!">
+
+            </form>
+            <!-- Donate-->
+            <form name="donate" id="donate">
+                <input type ="button" value = "Donate to your favourite Charity">
+
+            </form>
+
+
             <p>©2025 Eco vision Inc.</p>
     
         </footer>
