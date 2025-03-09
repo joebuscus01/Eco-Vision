@@ -94,6 +94,17 @@ input, select {
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    padding: 1em;
+    color: #8ec971; /* LET ME KNOW IF U CHANGE THIS */
+}
+
+
 
 nav {
     position: sticky;
@@ -108,10 +119,17 @@ nav {
     height: 10px;
     }
     td{
+        
         a{
             text-decoration: none; 
             color: white; 
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            img{
+                border-radius: 50%;
+                display: inline-block;
+                height: 2em;
+                
+            }
             
         }
         a:hover{
@@ -138,10 +156,10 @@ footer{
     width: 25%; 
     height: auto; 
     display: block;
+    margin: auto;
 }
 #login{
-    margin-left: 90%;
-    margin-top: 1%;
+    text-align: center;
 
 }
 
@@ -178,13 +196,27 @@ footer{
 .navigation{
     font-family: Arial, Helvetica, sans-serif
 }
+
+.otherplat { /*FIX */
+    img{
+        border-radius: 50%;
+        display: inline-flex;
+        height: 2em;
+        margin: auto;
+        
+    }
+    
+        
+    
+    
+}
 @media (mid-width: 1025px){ /* pc*/
 
 }
 @media (mid-width: 428px) and (max-width: 1024px){ /* tablet */
 
 }
-@media (mid-width: 320px) and (max-width 427){/* mobile */
+@media (mid-width: 320px) and (max-width: 427){/* mobile */
 
 }
 
