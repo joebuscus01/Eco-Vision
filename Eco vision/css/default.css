@@ -95,17 +95,30 @@ input, select {
 
 
 
-nav table{
+nav {
+    position: sticky;
+    top: 0; /* remove for mobile/tablet */
+    background-color: #046307;
+    padding: 1% 1%;
+
+
+    table{
     width: 100%;
     margin: auto;
-    background-color: green;
     height: 10px;
-}
-nav td a{
-    text-decoration: none; 
-    color: white; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+    }
+    td{
+        a{
+            text-decoration: none; 
+            color: white; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        a:hover{
+            color: #f7ff00;
+        }
+
+    }
 }
 .banner{
     width: 100%;
@@ -119,7 +132,7 @@ nav td a{
 footer{
     background-color: rgb(44, 44, 44); 
     color: white;
-
+    padding: 5% 1%;
 }
 .logo{
     width: 25%; 
@@ -147,23 +160,31 @@ footer{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-}
-
-.product img {
-    height: 100px;
-    width: 100px;
-}
-
-.product h5 {
-    font-size: 12px; /* Change text size */
-    
-    color: #000000; /* Change text color */
-    text-align: center; /* Center the text */
-     /* Make text uppercase */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Change font style */
-    margin-top: 10px; /* Add spacing above the text */
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    h5 {
+        font-size: 12px; /* Change text size */
+        
+        color: #000000; /* Change text color */
+        text-align: center; /* Center the text */
+         /* Make text uppercase */
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Change font style */
+        margin-top: 10px; /* Add spacing above the text */
+    }
 }
 
 .navigation{
     font-family: Arial, Helvetica, sans-serif
 }
+@media (mid-width: 1025px){ /* pc*/
+
+}
+@media (mid-width: 428px) and (max-width: 1024px){ /* tablet */
+
+}
+@media (mid-width: 320px) and (max-width 427){/* mobile */
+
+}
+
