@@ -5,20 +5,39 @@
         <meta charset="UTF-8">
         <Title> Products Page</Title>
         <link rel="icon" type="image/png" href ="images/favicon.png">
+        <link rel="stylesheet" href="css/default.css">
     </head>
 
+    <style>
+        h2 {text-align: left;}
+        input{        
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+
+        #fullname{
+            width: 20%;
+        }
+    </style>
 <body>
-    <header>
-        <img src="images/logo.png" alt="Ecovision Logo" style="width: 25%; height: auto; display: block; ">   
-    </header>
-    <nav>
-        <table style= "width: 100%; margin: auto; background-color: green; color:white">
+    
+    <nav class="navigation">
+        <table>
             <tr>
-                <td> <a href ="home.html" style="text-decoration: none; color: white;"> Ecovision</a> </td>
-                    <td><a href ="sales.html" style="text-decoration: none; color: white;">Sales & Limited edition</a></td>
-                    <td><a href = "products.html" style="text-decoration: none; color: white;">Products</a></td>
-                    <td> <a href = "about_us.html" style="text-decoration: none; color: white;">About Us</a></td>
-                    <td><a href = "contact.html" style="text-decoration: none; color: white;">Contact </a></td>
+                <td> <a href ="home.html"> Ecovision</a> </td>
+                <td><a href = "products.html"> Products</a></td>
+                <td> <a href = "about_us.html">About Us</a></td>
+                <td><a href = "contact.html">Contact </a></td>
+                <td><a href = "login.html"><img src="images/Login.webp" alt="login page" class="circle"> </a></td>
+                <td> <a href="checkout.html"> <img src="images/checkout.png" alt="checkout"> </a></td>
+                <td> 
+                    <form name="search Bar" id="search">
+                    <input type="search" id="searchbar" placeholder="Product or Page">
+                    </form>
+                </td>
+
 
             </tr>
         </table>
@@ -27,29 +46,22 @@
     </nav>
 
     <main>
-    
-    <h1>Team Contact</h1>
-    
-    <section>
-        <h2>Josef Geshelin</h2>
-        <p>Co-Founder</p>
-        <p>Email: <a href="josef50@my.yorku.ca">Josef@ecivision.ca</a></p>
-        <hr>
-    </section>
+        <h1> Let's Chat </h1>
+        <br>
 
-    <section>
-        <h2>Ashkan Siassi</h2>
-        <p>Marketing Director</p>
-        <p>Contact: <a href="ashkan06@my.yorku.ca">Ash@ecovision.ca</a></p>
-        <hr>
-    </section>
+        <h2> Full name</h2>
+        <input type="text" name="fullname" value="Full Name" id="fullname">
+        <br> 
+        <input type="text" name="email" value="Email"> 
+        <input type="text" name="phone" value="Phone #"> 
 
-    <section>
-        <h2>Toufic Fares</h2>
-        <p>Fitness Expert</p>
-        <p>Contact: <a href="toufic@my.yorku.ca">Toufic@ecovision.com</a></p>
-        <hr>
-    </section>
+
+
+        <h2> Message Us</h2>
+        <br>
+        <textarea> </textarea>
+    
+
 
     </main>
 </body>
