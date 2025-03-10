@@ -1,85 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVision Login</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="css/login.css">
-</head>
-<body>
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    <!-- Header (Navigation Bar) -->
-    <header>
-        <nav class="navigation">
-            <ul class="nav-left">
-                <li><a href="home.html">Ecovision</a></li>
-                <li><a href="sales.html">Sales & Limited Edition</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+/* Main Content */
+main {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+}
 
-            <div class="nav-right">
-                <div class="search-bar">
-                    <img src="images/search.png" alt="Search Icon">
-                    <input type="text" placeholder="What are you looking for...">
-                </div>
+/* Logo */
+.logo {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
 
-                <a href="login.html" class="nav-icon">
-                    <img src="images/login.png" alt="Login">
-                </a>
+/* Login Section */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
 
-                <a href="cart.html" class="nav-icon">
-                    <img src="images/cart.png" alt="Cart">
-                </a>
-            </div>
-        </nav>
-    </header>
+/* Login Form */
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
 
-    <!-- Main Login Section -->
-    <main>
-        <div class="login-wrapper">
-            <img src="images/logo.png" alt="Ecovision Logo" class="logo"> 
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
 
-            <h1>Log in</h1>
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 
-            <p class="login-text">
-                Shop your styles, save top picks to your wishlist, <br>
-                track those orders & train with us.
-            </p>
+/* Login Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-            <div class="login-container">
-                <form name="login" id="login">
-                    <input type="text" placeholder="Email address*" required>
-                    <input type="password" placeholder="Password*" required>
-                    
-                    <a href="#" class="forgot-password">Forgot password?</a>
+button:hover {
+    background-color: darkgreen;
+}
 
-                    <button type="submit">LOG IN</button>
+/* Register Section */
+.register {
+    margin-top: 10px;
+    font-size: 14px;
+}
 
-                    <div class="register">
-                        Don't have an account? <a href="#">Sign up</a>
-                    </div>
-                </form>
-            </div>
+.register a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
 
-            <div class="other-platforms">
-                <img src="images/google.png" alt="Google Login">
-                <img src="images/facebook.png" alt="Facebook Login">
-                <img src="images/apple.png" alt="Apple Login">
-            </div>
-        </div>
-    </main>
+/* Other Platforms Login */
+.other-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <button id="feedback-btn">Send us your feedback</button>
-            <button id="donate-btn">Donate to your favourite Charity</button>
-        </div>
-        <p>©2025 EcoVision Inc.</p>
-    </footer>
+.other-platforms img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid green;
+    transition: 0.3s;
+}
 
-</body>
-</html>
+.other-platforms img:hover {
+    opacity: 0.8;
+}
+
