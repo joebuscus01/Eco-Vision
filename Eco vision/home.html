@@ -11,6 +11,37 @@
 
     <body>
         <header>
+
+            <!-- nav bar -->
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Ecovision</a></li>
+                <li><a href="sales.html">Sales & Limited Edition</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- search bar-->
+                <div class="search-bar">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" placeholder="Products & Pages">
+                </div>
+
+                <a href="login.html" class="nav-icon">
+                    <img src="images/login.png" alt="Login">
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <img src="images/cart.png" alt="Cart">
+                </a>
+            </div>
+
+            
+        </nav>
+    </header>
         <!-- Logo Banner
          
             <img src="images/logo.png" alt="Ecovision Logo"  class="logo"> 
@@ -22,27 +53,7 @@
         
 
 
-        <nav class="navigation">
-            <table>
-                <tr>
-                    <td> <a href ="home.html"> Ecovision</a> </td>
-                    <td><a href = "products.html"> Products</a></td>
-                    <td> <a href = "about_us.html">About Us</a></td>
-                    <td><a href = "contact.html">Contact </a></td>
-                    <td><a href = "login.html"><img src="images/Login.webp" alt="login page" class="circle"> </a></td>
-                    <td> <a href="checkout.html"> <img src="images/checkout.png" alt="checkout"> </a></td>
-                    <td> 
-                        <form name="search Bar" id="search">
-                        <input type="search" id="searchbar" placeholder="Product or Page">
-                        </form>
-                    </td>
-
-
-                </tr>
-            </table>
-
-
-        </nav>
+        
     
         <!-- START HERE 
          Feb 2nd, 2025
@@ -112,34 +123,12 @@
 
 
 
-        <footer>
-
-            <!-- Feedback-->
-
-            <form name="feedback" id="feedback">
-                <button open-feedback>Send us your feedback</button>
-                
-                <dialog feedback> 
-                    <div> test </div>
-                    <button close-feedback>Close</button>
-
-                </dialog>
-
-            </form>
-            <!-- Donate-->
-            <form name="donate" id="donate">
-                <button open-donate>Donate to your favourite Charity</button>
-
-                <dialog donate> 
-                    <div> test </div>
-                    <button close-donate>Close</button>
-                </dialog>
-
-            </form>
-
-
-            <p>©2025 Eco vision Inc.</p>
-    
-        </footer>
+    <footer>
+        <div class="btns">
+            <button>Send us your feedback</button>
+            <button>Donate to your favourite Charity</button>
+        </div>
+        <p>©2025 EcoVision Inc.</p>
+    </footer>
     
     </html>
