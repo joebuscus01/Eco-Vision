@@ -18,12 +18,7 @@ main {
     flex: 1;
 }
 
-/* Logo */
-.logo {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-}
+/* Logo */  
 
 /* Login Section */
 .login-wrapper {
@@ -33,6 +28,9 @@ main {
     width: 100%;
     max-width: 600px;
     margin: auto;
+    .logo{
+        width: 100%;
+    }
 }
 
 /* Login Form */
