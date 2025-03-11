@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Sidebar</title>
+    <link rel="stylesheet" href="cart.html"> <!-- Link external CSS -->
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Checkout Sidebar */
+    .checkout-sidebar {
+        width: 350px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: auto;
+    }
+
+    /* Sidebar Header */
+    .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar-header h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .close-btn {
+        border: none;
+        background: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* Free Shipping Section */
+    .free-shipping {
+        margin: 15px 0;
+        font-size: 14px;
+    }
+
+    .free-shipping .progress-bar {
+        background: #ddd;
+        height: 5px;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 100%;
+        position: relative;
+    }
+
+    .free-shipping .progress-fill {
+        background: black;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    /* Cart Item */
+    .cart-item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .cart-item img {
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+
+    .cart-details {
+        flex-grow: 1;
+    }
+
+    .tag {
+        background: black;
+        color: white;
+        padding: 2px 6px;
+        font-size: 10px;
+        border-radius: 3px;
+    }
+
+    .cart-details h3 {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .product-desc {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .price {
+        font-weight: bold;
+    }
+
+    /* Cart Actions */
+    .cart-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .wishlist-btn, .remove-btn {
+        border: none;
+        background: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* Quantity Selector */
+    .quantity {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .quantity select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+    /* Discount Box */
+    .discount {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .discount-box {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .discount-box input {
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .apply-btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Pricing Section */
+    .pricing {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .pricing-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .pricing-total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Checkout Button */
+    .checkout-btn {
+        width: 100%;
+        background: black;
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .checkout-btn:hover {
+        background: #333;
+    }
+
+    /* Payment Icons */
+    .payment-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+
+    .payment-icons img {
+        width: 15%;
+
+    }
+    </style>
+    <!-- Checkout Sidebar -->
+    <div class="checkout-sidebar">
+        <div class="sidebar-header">
+            <h2>Your Bag</h2>
+            <button class="close-btn">✕</button>
+        </div>
+
+        <!-- Free Shipping Progress -->
+        <div class="free-shipping">
+            <p>You're $120 away from Free Standard Shipping <span>ⓘ</span></p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Product Section -->
+        <div class="cart-item">
+            <img src="images/white_shirt.png" alt="T-Shirt">
+            <div class="cart-details">
+                <span class="tag">NEW</span>
+                <h3>Ethically sourced Gym Shirt</h3>
+                <p class="product-desc">Fitted Fit<br>White | S</p>
+                <p class="price">$24.99</p>
+            </div>
+            <div class="cart-actions">
+                <button class="wishlist-btn">♡</button>
+                <button class="remove-btn">🗑</button>
+            </div>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="quantity">
+            <label for="qty">Qty:</label>
+            <select id="qty">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+
+        <!-- Discount Code -->
+        <div class="discount">
+            <label for="discount">Discount code:</label>
+            <div class="discount-box">
+                <input type="text" id="discount" placeholder="Enter code">
+                <button class="apply-btn">APPLY</button>
+            </div>
+        </div>
+
+        <!-- Pricing Summary -->
+        <div class="pricing">
+            <div class="pricing-row">
+                <span>Sub Total</span>
+                <span>$28.25</span>
+            </div>
+            <div class="pricing-row">
+                <span>Estimated Shipping</span>
+                <span>$6</span>
+            </div>
+            <div class="pricing-total">
+                <span>Total</span>
+                <span>$34.25</span>
+            </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <button class="checkout-btn">🛒 CHECKOUT</button>
+
+        <!-- Payment Icons -->
+        <div class="payment-icons">
+            <img src="images/visa.png" alt="Visa">
+            <img src="images/mastercard.png" alt="Mastercard">
+            <img src="images/paypal.png" alt="PayPal">
+            <img src="images/apay.png" alt="Apple Pay">
+        </div>
+    </div>
+
+</body>
+</html>

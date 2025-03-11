@@ -5,66 +5,78 @@
         <meta charset="UTF-8">
         <Title> Products Page</Title>
         <link rel="icon" type="image/png" href ="images/favicon.png">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/about_us.css">
     </head>
 
     <body>
-        <header>
-            <img src="images/logo.png" alt="Ecovision Logo" style="width: 25%; height: auto; display: block; ">   
-        </header>
-        <nav>
-            <table style= "width: 100%; margin: auto; background-color: green; color:white">
-                <tr>
-                  <td> <a href ="home.html" style="text-decoration: none; color: white;"> Ecovision</a> </td>
-                  <td><a href ="sales.html" style="text-decoration: none; color: white;">Sales & Limited edition</a></td>
-                  <td><a href = "products.html" style="text-decoration: none; color: white;">Products</a></td>
-                  <td> <a href = "about_us.html" style="text-decoration: none; color: white;">About Us</a></td>
-                  <td><a href = "contact.html" style="text-decoration: none; color: white;">Contact </a></td>
+      <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Ecovision</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-                </tr>
-            </table>
+            <div class="nav-right">
+                <!-- search bar-->
+                <div class="search-bar">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" placeholder="Products & Pages">
+                </div>
 
+                <a href="login.html" class="nav-icon">
+                    <img src="images/login.png" alt="Login">
+                </a>
 
+                <a href="cart.html" class="nav-icon">
+                    <img src="images/cart.png" alt="Cart">
+                </a>
+            </div>
+
+            
         </nav>
+    </header>
     
         <main>
             <section>
-              <h1>Our Eco-Friendly Journey</h1>
+              <h1>Our Journey</h1>
             </section>
+
+            <div class="about-main">
           
-            <section>
-              <h2>About Us</h2>
-              
-                <p>We founded this eco-friendly company with one goal in mind:
-                to reduce waste and promote a sustainable future. Over the years, 
-                we've committed ourselves to developing products and services 
-                that minimize environmental impact, while inspiring individuals 
-                to join us in making the world a greener place.</p>
-            </section>
-          
-            <section>
-              <h2>Meet Our Founders</h2>
-            </section>
-          
-            <section>
+            <div id="toufic">
               <h3>Toufic Fares</h3>
               <p>
-                Toufic leads our product innovation, ensuring each offering meets high standards for sustainability and quality.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni velit soluta reiciendis tempore provident dolore illum veritatis omnis voluptatibus ipsam facere dignissimos nesciunt dolores blanditiis, unde odit eius quod.
               </p>
-            </section>
+            </div>
+            <img src="images/toufic.png" id="toufic_img">
           
-            <section>
+            <div id="joe">
               <h3>Josef Geshlin</h3>
               <p>
-                Josef oversees operations and logistics, helping us run efficiently while staying eco-conscious.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nulla illum aspernatur vel minus harum molestiae dolore iusto delectus nihil quasi, eligendi, repellat distinctio officiis in vero doloribus reiciendis totam.
               </p>
-            </section>
+            </div>
+            <img src="images/joe.png" id="joe_img">
+
           
-            <section>
+            <div id="ash">
               <h3>Ashkan Siasssi</h3>
               <p>
-                Ashkan focuses on building impactful partnerships, forging alliances with like-minded organizations that share our sustainability goals.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolore explicabo quam harum voluptas delectus dolores dignissimos sed dolor, dicta soluta, veritatis nostrum ducimus iusto molestiae inventore praesentium natus! Dignissimos!
               </p>
-            </section>
+            </div>
+            <img src="images/ash.png" id="ash_img">
+
+
+
+
+            </div>
+          
+            
         </main>
       
                  
@@ -75,9 +87,12 @@
 
 
 
-    <footer style="background-color: rgb(44, 44, 44); color: white;">
-      <p>©2025 Eco vision Inc.</p>
-
-  </footer>
+      <footer>
+        <div class="btns">
+            <button>Send us your feedback</button>
+            <button>Donate to your favourite Charity</button>
+        </div>
+        <p>©2025 EcoVision Inc.</p>
+    </footer>
 
 </html>
