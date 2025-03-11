@@ -103,6 +103,7 @@ h1 {
     font-size: 5em;
     padding: 1em;
     color: #8ec971; /* LET ME KNOW IF U CHANGE THIS */
+    white-space: nowrap;
 }
 
 /*
@@ -138,6 +139,7 @@ nav {
         margin: 0;
         display: flex;
         gap: 20px;
+        flex: 1 5 200px;
         li {
             display: inline;
             a {
@@ -169,7 +171,7 @@ nav {
     background-color: #f5f5f5;
     border-radius: 25px;
     padding: 10px 15px;
-    width: 300px;
+    width: 200%;
     border: 1px solid #ddd;
     overflow: hidden;
     white-space: nowrap;
@@ -271,13 +273,18 @@ footer {
         width: 100px;
     }
     h5 {
+        font-size: 12px; /* Change text size */        
+        font-family: monospace; /* Change font style */
+        margin-top: 1em; /* Add spacing above the text */
+    }
+    p {
         font-size: 12px; /* Change text size */
-        
-        color: #000000; /* Change text color */
-        text-align: center; /* Center the text */
-         /* Make text uppercase */
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Change font style */
-        margin-top: 10px; /* Add spacing above the text */
+        font-family: monospace; /* Change font style */
+        margin-top: 2px; /* Add spacing above the text */
+        font-style: italic;
+        font-size: bold;
+        text-align: left;
+
     }
 }
 
@@ -320,4 +327,5 @@ input[type= search]{
 
 }
 @media (mid-width: 320px) and (max-width: 427){/* mobile */
+
 }

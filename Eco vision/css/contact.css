@@ -1,3 +1,87 @@
 h2 {
-    text-align: left;
+    margin: auto;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form{
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+    padding: 4em;
+    background-color: #f2f2f2;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "ctitle ctitle"
+    "firstname lastname"
+    "email phone"
+    "title title"
+    "issue issue"
+    "submit submit";
+    textarea{
+        grid-area: issue;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        font-size: 12px;
+        box-sizing: border-box;
+        resize: vertical;
+
+        
+    }
+    h2{
+        grid-area: title;
+        font-size: 2em;
+    }
+    input {
+        padding: 8px;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+    input:hover{
+        cursor: text;
+    }
+    
+    
+    
+}
+#contant_title{
+    margin-bottom: 3%;
+    grid-area: ctitle;
+}
+#firstname{
+    grid-area: firstname;
+    
+}
+#lastname{
+    grid-area: lastname;
+
+}
+#email{
+    grid-area: email;
+
+}
+#phone{
+    grid-area: phone;
+
+}
+#contact_submit{
+    grid-area: submit;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
 }

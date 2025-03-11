@@ -1,0 +1,47 @@
+.about-main{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto ;
+    grid-template-areas: 
+    "toufic toufic-img"
+    "joe-img joe"
+    "ash ash-img";
+}
+
+#company-desc{
+    grid-area: desc;
+    
+    
+
+}
+#toufic{
+    grid-area: toufic;
+
+}
+#joe{
+    grid-area: joe;
+
+}
+#ash{
+    grid-area: ash;
+
+}
+#toufic_img{
+    grid-area: toufic-img;
+    width: 10em;
+    float: right;
+
+}
+#joe_img{
+    grid-area: joe-img;
+    width: 10em;
+    float: right;
+
+
+}
+#ash_img{
+    grid-area: ash-img;
+    width: 10em;
+    float: right;
+
+}
