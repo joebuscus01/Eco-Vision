@@ -29,9 +29,7 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
-nav ul {
-    list-style:none;
-}
+
 
 blockquote, q {
     quotes:none;
@@ -100,10 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
     font-size: 5em;
     padding: 1em;
-    color: #8ec971; /* LET ME KNOW IF U CHANGE THIS */
+    color: #4F9F60; /* LET ME KNOW IF U CHANGE THIS */
     white-space: nowrap;
+    -webkit-text-stroke: 3px black;
+    
 }
 
 /*
@@ -132,6 +134,7 @@ nav {
     width: 100%;
     box-sizing: border-box;
     height: 60px;
+    z-index: 1000   ;
 
     ul{
         list-style: none;
@@ -156,7 +159,6 @@ nav {
             }
         }
     }
-    
 }
 .nav-right {
     display: flex;
@@ -236,9 +238,39 @@ footer {
     }
     button:hover {
         background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
     }
 }
 
+.sidebar{ /* FOR HAMBURGER MENU*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 15%;
+    z-index: 999;
+    background-color: rgba(256,256,256, 0.2); /* make the rest of website shaded for viablity*/
+    backdrop-filter: blur(2px);
+    box-shadow: -10px 0 10px black;
+    display: none; /* CHANGE TO FLEX FOR JS*/
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5%;
+    
+    li {
+        width: 100%;
+        a{
+            
+            color: black;
+            width: 100%;
+
+        }
+    }
+    li:nth-child(1){
+        margin-top: 6%;
+    }
+}
 
 
 .logo{
@@ -319,13 +351,30 @@ input[type= search]{
 .circle{
     border-radius: 50%;
 } 
+.tag {
+    background: rgb(168, 1, 1);
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    font-size: 10px;
+    border-radius: 3px;
+}
 
 @media (mid-width: 1025px){ /* pc*/
+    nav{
+        display: none;
+    }
 
 }
 @media (mid-width: 428px) and (max-width: 1024px){ /* tablet */
 
 }
-@media (mid-width: 320px) and (max-width: 427){/* mobile */
+@media (max-width: 500px){
+    h1{
+        color: aqua;
+    }
+    nav{
+        background-color: blue !important;
+    }
+  
 
 }
