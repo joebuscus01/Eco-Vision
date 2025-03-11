@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVision Login</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+
+    <!-- nav bar -->
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Ecovision</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- search bar-->
+                <div class="search-bar">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" placeholder="Products & Pages">
+                </div>
+
+                <a href="login.html" class="nav-icon">
+                    <img src="images/login.png" alt="Login">
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <img src="images/cart.png" alt="Cart">
+                </a>
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <!-- Main Login Section -->
+    <main>
+        <div class="login-wrapper">
+            <img src="images/logo.png" alt="Ecovision Logo" class="logo"> 
+
+            <h1>Log in</h1>
+
+            <p style="margin-bottom: 2%;">
+                Shop your styles, save top picks to your wishlist, <br>
+                track those orders & train with us.
+            </p>
+
+            <div class="login-container">
+                <form name="login" id="login">
+                    <input type="text" placeholder="Email address*" required>
+                    <input type="password" placeholder="Password*" required>
+                    
+                    <a href="#" class="forgot-password">Forgot password?</a> <!-- PLANNED FOR JS-->
+
+                    <button type="submit" id="log-btn">LOG IN</button>
+
+                    <div class="register">
+                        Don't have an account? <a href="#">Sign up</a>  <!-- PLANNED FOR JS-->
+                    </div>
+                </form>
+            </div>
+
+            <div class="other-platforms">
+                <img src="images/google.png" alt="Google Login">
+                <img src="images/facebook.png" alt="Facebook Login">
+                <img src="images/apple.png" alt="Apple Login">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="btns">
+            <button>Send us your feedback</button>
+            <button>Donate to your favourite Charity</button>
+        </div>
+        <p>©2025 EcoVision Inc.</p>
+    </footer>
+
+</body>
+</html>

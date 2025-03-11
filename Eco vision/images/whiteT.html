@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> ProteinPowder Details</title>
+        <link rel="icon" type="image/png" href ="images/favicon.png">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/product_details.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="home.html">Ecovision</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+    
+                <div class="nav-right">
+                    <!-- search bar-->
+                    <div class="search-bar">
+                        <img src="images/search.png" alt="Search Icon">
+                        <input type="text" placeholder="Products & Pages">
+                    </div>
+    
+                    <a href="login.html" class="nav-icon">
+                        <img src="images/login.png" alt="Login">
+                    </a>
+    
+                    <a href="cart.html" class="nav-icon">
+                        <img src="images/cart.png" alt="Cart">
+                    </a>
+                </div>
+    
+                
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img src="images/white_shirt.png" alt="white_shirt" style="height: 350px; width: 350px;">
+            </section>
+
+            <!-- Product Details (Title, Price, and Size Selection) -->
+            <div class="product-details">
+                <h2>White Shirt</h2>
+                <h3>$24.99</h3>
+                <p><span class="product-desc">Fitted Fit</span></p>
+                <!-- Size Selection Header -->
+                <div class="size-header">
+                    <span class="size-label">Select a size</span>
+                    <span class="size-guide">Size Guide</span>
+                </div>
+
+                <!-- Size Options -->
+                <div class="size-container">
+                    <div class="size-options">
+                        <button class="size-option" data-size="XS">XS</button>
+                        <button class="size-option" data-size="S">S</button>
+                        <button class="size-option" data-size="M">M</button>
+                        <button class="size-option" data-size="L">L</button>
+                        <button class="size-option" data-size="XL">XL</button>
+                        <button class="size-option" data-size="XXL">XXL</button>
+                        <button class="size-option" data-size="3XL">3XL</button>
+                    </div>
+                </div>
+
+                <!-- Add to Bag Button -->
+                <button id="bag">Add to Bag</button>
+            </div>
+        </main>
+        <footer>
+            <div class="btns">
+                <button>Send us your feedback</button>
+                <button>Donate to your favourite Charity</button>
+            </div>
+            <p>©2025 EcoVision Inc.</p>
+        </footer>
+
+    </body>
+</html>
