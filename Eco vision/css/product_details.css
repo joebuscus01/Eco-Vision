@@ -5,6 +5,7 @@ main {
     max-width: 900px; /* Keeps layout from being too wide */
     margin: auto; /* Centers everything on the page */
     padding-top: 10%;
+    font-family: Arial, sans-serif;
 }
 h2{
     font-size: larger;
@@ -92,4 +93,10 @@ h2{
     width: fit-content;
     margin-top: 20px;
     align-self: flex-start; /* Keeps it aligned below the size options */
+}
+
+.product-desc {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: gray;
 }
