@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Products Page</title>
-        <link rel="icon" type="image/png" href ="images/favicon.png">
-        <link rel="stylesheet" href="css/default.css">
-        <link rel="stylesheet" href="css/about_us.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EcoVision</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/about_us.css">
+</head>
 
-    <body>
-      <header>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
         <nav class="navigation">
             <ul>
                 <li><a href="home.html">Ecovision</a></li>
-                <li><a href="products.html">Products</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
             <div class="nav-right">
-                <!-- search bar-->
                 <div class="search-bar">
                     <img src="images/search.png" alt="Search Icon">
                     <input type="text" placeholder="Products & Pages">
                 </div>
-
                 <a href="login.html" class="nav-icon">
                     <img src="images/login.png" alt="Login">
                 </a>
-
                 <a href="cart.html" class="nav-icon">
                     <img src="images/cart.png" alt="Cart">
                 </a>
             </div>
-
-            
         </nav>
     </header>
-    
-        <main>
-            <section>
-              <h1>Our Journey</h1>
-            </section>
 
-            <div class="about-main">
-          
-            <div id="toufic">
-              <h3>Toufic Fares</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel magni velit soluta reiciendis tempore provident dolore illum veritatis omnis voluptatibus ipsam facere dignissimos nesciunt dolores blanditiis, unde odit eius quod.
-              </p>
+    <!-- Main Content -->
+    <main>
+        <h1 class="page-title">Who We Are</h1>
+
+        <div class="about-container">
+            <!-- First Owner -->
+            <div class="owner">
+                <img src="images/toufic.png" alt="Toufic Fares" class="owner-image left">
+                <div class="owner-text">
+                    <h2>Toufic Fares</h2>
+                    <p>
+                        Toufic Fares is a visionary entrepreneur dedicated to sustainability. 
+                        His passion for eco-friendly solutions inspired the foundation of EcoVision. 
+                        With a background in environmental science, he aims to make sustainable 
+                        living accessible to everyone.
+                    </p>
+                </div>
             </div>
-            <img src="images/toufic.png" id="toufic_img">
-          
-            <div id="joe">
-              <h3>Josef Geshlin</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nulla illum aspernatur vel minus harum molestiae dolore iusto delectus nihil quasi, eligendi, repellat distinctio officiis in vero doloribus reiciendis totam.
-              </p>
+
+            <!-- Second Owner -->
+            <div class="owner reverse">
+                <div class="owner-text">
+                    <h2>Josef Geshlin</h2>
+                    <p>
+                        Josef Geshlin brings a wealth of business expertise to EcoVision. 
+                        As a co-founder, he ensures that the company's sustainability efforts align 
+                        with effective business strategies, allowing for impactful and lasting change.
+                    </p>
+                </div>
+                <img src="images/joe.png" alt="Josef Geshlin" class="owner-image right">
             </div>
-            <img src="images/joe.png" id="joe_img">
 
-          
-            <div id="ash">
-              <h3>Ashkan Siasssi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolore explicabo quam harum voluptas delectus dolores dignissimos sed dolor, dicta soluta, veritatis nostrum ducimus iusto molestiae inventore praesentium natus! Dignissimos!
-              </p>
+            <!-- Third Owner -->
+            <div class="owner">
+                <img src="images/ash.png" alt="Ashkan Siassi" class="owner-image left">
+                <div class="owner-text">
+                    <h2>Ashkan Siassi</h2>
+                    <p>
+                        With a deep passion for fitness and sustainability, Ashkan Siassi plays 
+                        a key role in product development at EcoVision. His innovative mindset ensures 
+                        that our products meet high environmental and performance standards.
+                    </p>
+                </div>
             </div>
-            <img src="images/ash.png" id="ash_img">
-
-
-
-
-            </div>
-          
-            
-        </main>
-      
-                 
-
-
-      </body>
-
-
-
-
-      <footer>
-        <div class="btns">
-            <button>Send us your feedback</button>
-            <button>Donate to your favourite Charity</button>
         </div>
-        <p>©2025 EcoVision Inc.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            <a href="home.html"> <h4>Ecovision</h4> </a>
+            <a href="about_us.html"><p>About</p> </a>
+            <a href="login.html"><p>Login</p></a>
+            <a href="cart.html"><p >Cart</p></a>
+
+        </div>
+        
+        <div class="btns">
+            <a href="contact.html"> <button class="btn">Send Us Feedback</button> </a>
+            <button class="btn">Donate To Your Favourite Charity </button> <!-- WRITE IN JS-->
+        </div>
+
+        <div class="follow-us">
+            <h3> ↓ FOLLOW US ↓</h3>
+            <br>
+            <div>
+                <img src="images/facebook.png" alt="Faceboook Account" id="facebook_acc">
+                <img src="images/tiktok.png" alt="Tiktok Account" id="tiktok_acc">
+                <img src="images/instagram.png" alt="Instagram Account" id="insta_acc">
+            </div>
+            
+
+        </div>
+        <p id="copyright">©2025 EcoVision Inc.</p>
     </footer>
 
+</body>
 </html>
