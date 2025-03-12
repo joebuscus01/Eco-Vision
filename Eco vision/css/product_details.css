@@ -1,39 +1,77 @@
+/* === GENERAL STYLING === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* === MAIN CONTAINER === */
 main {
     display: flex;
-    align-items: flex-start; /* Ensures everything aligns at the top */
-    gap: 30px; /* Reduces extra space */
-    max-width: 900px; /* Keeps layout from being too wide */
-    margin: auto; /* Centers everything on the page */
-    padding-top: 10%;
-    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-h2{
-    font-size: larger;
+
+/* === PRODUCT IMAGE === */
+.product-img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin-top: 10% ;
 }
-/* Keep the product details in a column layout */
+
+/* === PRODUCT DETAILS CONTAINER === */
 .product-details {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; /* Keeps everything left-aligned */
-    width: 100%;
+    max-width: 500px;
+    margin-top: 10%;
 }
 
-/* Fix the alignment of "Select a size" and "Size Guide" */
+/* === PRODUCT TITLE & PRICE === */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-desc {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* === SIZE SELECTION HEADER === */
 .size-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 320px; /* Ensures it doesn’t stretch too far */
-    margin-top: 10px;
+    width: 80%;
+    margin-top: 20px;
 }
 
-/* Keep "Select a size" text aligned */
 .size-label {
     font-weight: bold;
+    font-size: 16px;
 }
 
-/* Ensure "Size Guide" stays correctly positioned */
 .size-guide {
     font-size: 12px;
     color: gray;
@@ -41,31 +79,22 @@ h2{
     cursor: pointer;
 }
 
-/* Properly align the size selection box */
+/* === SIZE SELECTION CONTAINER === */
 .size-container {
-    display: inline-block;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-    width: fit-content;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
-/* Align size buttons in a single row */
-.size-options {
-    display: flex;
-    gap: 10px;
-}
-
-/* Maintain the size button design */
 .size-option {
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: 2px solid #ccc;
     background-color: white;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .size-option:hover {
@@ -79,24 +108,60 @@ h2{
     font-weight: bold;
 }
 
-/* Fix the "Add to Bag" button alignment */
+/* === ADD TO BAG BUTTON === */
 #bag {
     background-color: black;
     color: white;
     font-size: 16px;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 15px 35px;
     border-radius: 30px;
     cursor: pointer;
     text-transform: uppercase;
     border: none;
-    width: fit-content;
     margin-top: 20px;
-    align-self: flex-start; /* Keeps it aligned below the size options */
+    transition: all 0.3s ease-in-out;
 }
 
-.product-desc {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    color: gray;
+#bag:hover {
+    background-color: #333;
+}
+
+/* === COMMENTS SECTION === */
+.comments {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.comments textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+    }
+
+    .product-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .product-details {
+        text-align: center;
+        align-items: center;
+    }
+
+    .size-container {
+        justify-content: center;
+    }
 }

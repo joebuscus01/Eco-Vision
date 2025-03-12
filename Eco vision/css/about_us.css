@@ -1,47 +1,88 @@
-.about-main{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto ;
-    grid-template-areas: 
-    "toufic toufic-img"
-    "joe-img joe"
-    "ash ash-img";
+/* === GENERAL STYLING === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-#company-desc{
-    grid-area: desc;
-    
-    
-
+.page-title {
+    text-align: center;
+    font-size: 3.5em;
+    margin-left: 7%;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: black;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
 }
-#toufic{
-    grid-area: toufic;
 
+/* === ABOUT SECTION STYLING === */
+.about-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-#joe{
-    grid-area: joe;
 
+.owner {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#ash{
-    grid-area: ash;
 
+.owner:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
-#toufic_img{
-    grid-area: toufic-img;
-    width: 10em;
-    float: right;
 
+.owner.reverse {
+    flex-direction: row-reverse;
 }
-#joe_img{
-    grid-area: joe-img;
-    width: 10em;
-    float: right;
 
-
+.owner-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 20px;
 }
-#ash_img{
-    grid-area: ash-img;
-    width: 10em;
-    float: right;
 
+.owner-text {
+    flex: 1;
+}
+
+.owner-text h2 {
+    font-size: 1.8em;
+    color: #004d00;
+    margin-bottom: 10px;
+}
+
+.owner-text p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+    .owner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .owner.reverse {
+        flex-direction: column;
+    }
+
+    .owner-image {
+        margin-bottom: 15px;
+    }
 }
