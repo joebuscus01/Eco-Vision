@@ -7,7 +7,7 @@ body {
 
 /* Checkout Sidebar */
 .checkout-sidebar {
-    width: 350px;
+    width: 50%; /*700px */
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -65,7 +65,7 @@ body {
 
 .cart-item img {
     width: 70px;
-    height: 70px;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -105,7 +105,7 @@ body {
 .wishlist-btn, .remove-btn {
     border: none;
     background: none;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -198,5 +198,23 @@ body {
 
 .payment-icons img {
     width: 15%;
+    cursor: pointer;
 
+}
+.back {
+    margin-top: 10px;
+    text-align: center;
+    font-size: large ;
+}
+
+.back a {
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+}
+@media (max-width: 1200px) {
+    .checkout-sidebar{
+        width: 75%;
+    }
+    
 }
