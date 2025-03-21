@@ -6,25 +6,26 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/home.css">
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <!-- SIDEBAR FOR JAVASCRIPT
+            <!-- SIDEBAR FOR JAVASCRIPT -->
             <ul class="sidebar">
-                <li><a href="home.html">Ecovision</a></li>
+                <li> <img src="images/close.png" onclick=HideSidebar()> </li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
 
-            </ul>-->
+            </ul>
 
             <ul class="navigation">
                 <li><a href="home.html">Ecovision</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="hidetablet"><a href="about_us.html">About Us</a></li>
+                <li class="hidetablet"><a href="contact.html">Contact</a></li>
 
             </ul>
             <div class="nav-right">
@@ -41,7 +42,7 @@
                 <a href="cart.html" class="nav-icon">
                     <img src="images/cart.png" alt="Cart">
                 </a>
-                <a class="nav-icon"> 
+                <a class="nav-icon" onclick=ShowSidebar()> 
                     <img src="images/menu.png" alt="hamburger menu"> 
                 </a>
 
