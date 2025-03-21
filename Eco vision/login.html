@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/default.css">
+    <script src="js/login.js"></script>
 </head>
 <body>
 
@@ -42,8 +43,9 @@
 
     <!-- Main Login Section -->
     <main>
+        <img src="images/logo.png" alt="Ecovision Logo" class="logo"> 
+
         <div class="login-wrapper">
-            <img src="images/logo.png" alt="Ecovision Logo" class="logo"> 
 
             <h1>Log in</h1>
 
@@ -73,18 +75,21 @@
                 <img src="images/apple.png" alt="Apple Login">
             </div>
         </div>
-        <div class="two-fa">
-            <h2>
-                Authticate It's You
-            </h2>
-            <p>
-                Pinky promise it's you?  <br>Cmon [USER], We trust you.
+        <!--TWO FA-->
+        <div class="login-wrapper" id="two-fa">
+
+            <h1>Authticate It's You</h1>
+
+            <p style="margin-bottom: 8%;">
+                Pinky promise it's you?  <br>
+                Cmon [USER], We trust you.            
             </p>
-            <img src="images/pinkyl.png" class="pinky">
-            <img src="images/pinkyr.png" class="pinky">
 
-
-
+            <div class="login-container">
+                <img src="images/pinkyl.png" class="pinky">
+                <img src="images/pinkyr.png" class="pinky">
+                <a> <button type="submit" id="log-btn" onclick=two_fa_return()>Return to Log in</button> </a>
+            </div>
         </div>
     </main>
 
