@@ -179,11 +179,11 @@ nav {
     overflow: hidden;
     white-space: nowrap;
 }
-
+#search{
+    background-color: #f5f5f5
+}
 .search-bar img {
     width: 18px;
-    height: auto;
-    margin-right: 10px;
 }
 
 
@@ -315,7 +315,7 @@ footer {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 15%;
+    width: 30%;
     z-index: 999;
     background-color: rgba(256,256,256, 0.2); /* make the rest of website shaded for viablity*/
     backdrop-filter: blur(2px);
@@ -337,6 +337,12 @@ footer {
     }
     li:nth-child(1){
         margin-top: 6%;
+    }
+    img{
+        height: 50%;
+    }
+    img:hover{
+        cursor: pointer;
     }
 }
 
@@ -426,15 +432,24 @@ input[type= search]{
     font-size: 10px;
     border-radius: 3px;
 }
+#burger{
+    display: none;
+}
 
 
-@media (mid-width: 1025px){ /* pc*/
-    nav{
+@media (max-width: 1024px){ /* tablet */
+    #burger{
+        display: block;
+    }
+    .hidetablet{
         display: none;
     }
+    .sidebar{
+        width: 70%;
+        max-width: 100%;
 
-}
-@media (max-width: 1024px){ /* tablet */
+    }
+
     .left{
         grid-area: left-text;
         a{
@@ -464,6 +479,11 @@ input[type= search]{
 
 }
 @media (max-width: 500px){
+    .sidebar{
+        width: 100%;
+        max-width: 100%;
+
+    }
    
    .search-bar {
         width: auto; /* Shrinks to fit the icon */
