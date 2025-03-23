@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/product_details.css">
+    <script src="js/product_details.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Ecovision</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search-bar">
+                    <img src="images/search.png" alt="Search Icon">
+                    <input type="text" placeholder="Products & Pages">
+                </div>
+                <a href="login.html" class="nav-icon"><img src="images/login.png" alt="Login"></a>
+                <a href="cart.html" class="nav-icon"><img src="images/cart.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Product Section -->
+    <main>
+        <!-- Product Image -->
+        <img src="images/yoga_mat.jpg" alt="Yoga Mat" class="product-img">
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h2 id="name"></h2>
+            <h3 id="price"></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatem explicabo nobis vitae cum nemo, velit minima eius, dicta alias quaerat consequatur accusantium reprehenderit similique, laboriosam libero at rerum! Sit!</p>
+
+            <!-- Size Selection -->
+            <div class="size-header">
+            <span class="size-label">Select Qty</span>
+            
+            </div>
+            
+            <div class="size-container">
+                <div class="size-options">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Add to Bag Button -->
+            <button id="bag">Add to Bag</button>
+
+            <!-- Comments Section -->
+            <div class="comments">
+                <textarea id="comment" name="comment" placeholder="Leave a review..."></textarea>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            <a href="home.html"> <h4>Ecovision</h4> </a>
+            <a href="about_us.html"><p>About</p> </a>
+            <a href="login.html"><p>Login</p></a>
+            <a href="cart.html"><p >Cart</p></a>
+
+        </div>
+        
+        <div class="btns">
+            <a href="contact.html"> <button class="btn">Send Us Feedback</button> </a>
+            <button class="btn">Donate To Your Favourite Charity </button> <!-- WRITE IN JS-->
+        </div>
+
+        <div class="follow-us">
+            <h3> ↓ FOLLOW US ↓</h3>
+            <br>
+            <div>
+                <img src="images/facebook.png" alt="Faceboook Account" id="facebook_acc">
+                <img src="images/tiktok.png" alt="Tiktok Account" id="tiktok_acc">
+                <img src="images/instagram.png" alt="Instagram Account" id="insta_acc">
+            </div>
+            
+
+        </div>
+        <p id="copyright">©2025 EcoVision Inc.</p>
+    </footer>
+</html>
