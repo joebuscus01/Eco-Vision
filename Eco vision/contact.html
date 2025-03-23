@@ -6,8 +6,10 @@
         <link rel="icon" type="image/png" href ="images/favicon.png">
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/contact.css">
+        <script src="js/contact.js" defer></script>
+
         <script src="js/nav.js"></script>
-        <script src="js/contact.js"></script>
+
         
     </head>
 
@@ -16,32 +18,43 @@
     <header>
         
 
-        <nav class="navigation">
-            <ul>
-                <li><a href="home.html">Ecovision</a></li>
+        <nav>
+            <!-- SIDEBAR FOR JAVASCRIPT -->
+            <ul class="sidebar">
+                <li> <img src="images/close.png" onclick=HideSidebar()> </li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+
             </ul>
 
-            <div class="nav-right">  
-                <!-- search bar-->
+            <ul class="navigation">
+                <li><a href="home.html">Ecovision</a></li>
+                <li class="hidetablet"><a href="about_us.html">About Us</a></li>
+                <li class="hidetablet"><a href="contact.html">Contact</a></li>
 
-                
+            </ul>
+            <div class="nav-right">
+                <!-- Search Bar -->
                 <div class="search-bar">
                     <img src="images/search.png" alt="Search Icon">
-                    <input type="text" placeholder="Products & Pages">
+                    <input type="search" placeholder="Products & Pages" id="search">
+                </div>
+                <div class="results">
+                    
                 </div>
 
+                
                 <a href="login.html" class="nav-icon">
                     <img src="images/login.png" alt="Login">
                 </a>
-
                 <a href="cart.html" class="nav-icon">
                     <img src="images/cart.png" alt="Cart">
                 </a>
-            </div>
+                <a class="nav-icon" onclick=ShowSidebar() id="burger"> 
+                    <img src="images/menu.png" alt="hamburger menu"> 
+                </a>
 
-            
+            </div>
         </nav>
     </header>
 
