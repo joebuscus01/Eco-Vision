@@ -38,6 +38,12 @@ main {
     max-width: 500px;
     margin-top: 10%;
 }
+#name {
+    max-width: 45%;
+    margin: auto;
+    margin-bottom: 1%;
+
+}
 
 /* === PRODUCT TITLE & PRICE === */
 h2 {
