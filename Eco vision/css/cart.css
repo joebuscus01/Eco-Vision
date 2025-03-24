@@ -212,6 +212,10 @@ body {
     text-decoration: none;
     color: green;
 }
+.cart{
+    display: flex;
+}
+
 @media (max-width: 1200px) {
     .checkout-sidebar{
         width: 75%;

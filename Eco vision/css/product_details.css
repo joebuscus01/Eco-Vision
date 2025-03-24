@@ -132,7 +132,12 @@ h3 {
 #bag:hover {
     background-color: #333;
 }
-
+#bag.added{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+}
 /* === COMMENTS SECTION === */
 .comments {
     width: 100%;
@@ -171,3 +176,4 @@ h3 {
         justify-content: center;
     }
 }
+
