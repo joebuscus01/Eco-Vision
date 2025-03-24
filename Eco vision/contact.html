@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/contact.css">
         <script src="js/contact.js" defer></script>
-
+        <script src="js/footer.js" defer></script>
         <script src="js/nav.js"></script>
 
         
@@ -16,16 +16,19 @@
 <body>
     
     <header>
-        
-
         <nav>
             <!-- SIDEBAR FOR JAVASCRIPT -->
             <ul class="sidebar">
                 <li> <img src="images/close.png" onclick=HideSidebar()> </li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
+
+            <!-- CART FOR JAVASCRIPT 
+            <ul class="sidebar" id="cart">
+                <li> <img src="images/close.png" onclick=HideCart()> </li>
+            </ul>
+            -->
 
             <ul class="navigation">
                 <li><a href="home.html">Ecovision</a></li>
@@ -35,19 +38,20 @@
             </ul>
             <div class="nav-right">
                 <!-- Search Bar -->
-                <div class="search-bar">
-                    <img src="images/search.png" alt="Search Icon">
-                    <input type="search" placeholder="Products & Pages" id="search">
-                </div>
-                <div class="results">
-                    
-                </div>
+                <div class="search-wrapper">
+                    <div class="search-bar">
+                      <img src="images/search.png" alt="Search Icon">
+                      <input type="search" placeholder="Products" id="search">
+                    </div>
+                    <div class="results" id="search-results"></div>
+                  </div>
 
                 
-                <a href="login.html" class="nav-icon">
+                
+                <a id="account-link" href="login.html" class="nav-icon">
                     <img src="images/login.png" alt="Login">
                 </a>
-                <a href="cart.html" class="nav-icon">
+                <a href="cart.html" class="nav-icon" onclick="ShowCart()">
                     <img src="images/cart.png" alt="Cart">
                 </a>
                 <a class="nav-icon" onclick=ShowSidebar() id="burger"> 
@@ -57,6 +61,35 @@
             </div>
         </nav>
     </header>
+
+    <!-- DIALOG -->
+    <dialog id="donation-dialog">
+        <button class="close-x" onclick="closedonate()">✖</button>
+      
+        <h1 class="donate-title">Donate Today</h1>
+      
+        <div class="donations">
+          <img src="images/eco_friendly.png" alt="Eco Friendly">
+          <img src="images/eco_homes.png" alt="Eco Homes">
+          <img src="images/eco_surprise.png" alt="Eco Surprise">
+        </div>
+      
+        <div class="donate-money">
+          <label for="donate-input">$</label>
+          <input 
+            type="number"
+            id="donate-input"
+            step="0.01"
+            placeholder="0.00"
+            min="0"
+            max="9999"
+          />
+        </div>
+      
+        <div class="donate-buttons">
+          <button onclick="submitDonation()">Donate</button>            
+        </div>
+      </dialog>
 
     
 
@@ -78,7 +111,7 @@
             <h2> Issue</h2>
             <textarea> </textarea>
             <br>    
-            <input name="contact_submit"  type="submit" id="contact_submit" minlength="1">
+            <input name="contact_submit"  type="submit" id="contact_submit">
 
         </form>
         
@@ -99,8 +132,7 @@
     
     <div class="btns">
         <a href="contact.html"> <button class="btn">Send Us Feedback</button> </a>
-        <button class="btn">Donate To Your Favourite Charity </button> <!-- WRITE IN JS-->
-    </div>
+        <button class="btn" onclick="opendonate()">Donate To Your Favourite Charity</button>        </div>
 
     <div class="follow-us">
         <h3> ↓ FOLLOW US ↓</h3>

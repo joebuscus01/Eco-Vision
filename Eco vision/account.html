@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Account</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/account.css" />
+  <script src="js/nav.js" defer></script>
+  <script src="js/footer.js" defer></script>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+        <!-- SIDEBAR FOR JAVASCRIPT -->
+        <ul class="sidebar">
+            <li> <img src="images/close.png" onclick=HideSidebar()> </li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- CART FOR JAVASCRIPT 
+        <ul class="sidebar" id="cart">
+            <li> <img src="images/close.png" onclick=HideCart()> </li>
+        </ul>
+        -->
+
+        <ul class="navigation">
+            <li><a href="home.html">Ecovision</a></li>
+            <li class="hidetablet"><a href="about_us.html">About Us</a></li>
+            <li class="hidetablet"><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <div class="nav-right">
+            <!-- Search Bar -->
+            <div class="search-wrapper">
+                <div class="search-bar">
+                  <img src="images/search.png" alt="Search Icon">
+                  <input type="search" placeholder="Products" id="search">
+                </div>
+                <div class="results" id="search-results"></div>
+              </div>
+
+            
+            
+            <a id="account-link" href="login.html" class="nav-icon">
+                <img src="images/login.png" alt="Login">
+            </a>
+            <a href="cart.html" class="nav-icon" onclick="ShowCart()">
+                <img src="images/cart.png" alt="Cart">
+            </a>
+            <a class="nav-icon" onclick=ShowSidebar() id="burger"> 
+                <img src="images/menu.png" alt="hamburger menu"> 
+            </a>
+
+        </div>
+    </nav>
+</header>
+<!-- DIALOG -->
+<dialog id="donation-dialog">
+  <button class="close-x" onclick="closedonate()">✖</button>
+
+  <h1 class="donate-title">Donate Today</h1>
+
+  <div class="donations">
+    <img src="images/eco_friendly.png" alt="Eco Friendly">
+    <img src="images/eco_homes.png" alt="Eco Homes">
+    <img src="images/eco_surprise.png" alt="Eco Surprise">
+  </div>
+
+  <div class="donate-money">
+    <label for="donate-input">$</label>
+    <input 
+      type="number"
+      id="donate-input"
+      step="0.01"
+      placeholder="0.00"
+      min="0"
+      max="9999"
+    />
+  </div>
+
+  <div class="donate-buttons">
+    <button onclick="submitDonation()">Donate</button>            
+  </div>
+</dialog>
+
+  <!-- Main Account Section -->
+  <main>
+    <div class="account-container">
+      <h2>Welcome, <span id="username">User</span></h2>
+
+      <div class="info-group">
+        <label>Email:</label>
+        <p id="useremail"></p>
+      </div>
+
+      <div class="info-group">
+        <label>Password:</label>
+        <p id="userpassword"></p>
+      </div>
+
+      <div class="info-group">
+        <label>Last Purchases:</label>
+        <ul id="purchases">
+          <li class="empty">No purchases found.</li>
+        </ul>
+      </div>
+
+      <button class="logout-btn" onclick="logout()">Log Out</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="left">
+      <a href="home.html"><h4>Ecovision</h4></a>
+      <a href="about_us.html"><p>About</p></a>
+      <a href="login.html"><p>Login</p></a>
+      <a href="cart.html"><p>Cart</p></a>
+    </div>
+
+    <div class="btns">
+      <a href="contact.html"><button class="btn">Send Us Feedback</button></a>
+      <button class="btn">Donate To Your Favourite Charity</button>
+    </div>
+
+    <div class="follow-us">
+      <h3>↓ FOLLOW US ↓</h3><br>
+      <div>
+        <img src="images/facebook.png" alt="Facebook" id="facebook_acc">
+        <img src="images/tiktok.png" alt="Tiktok" id="tiktok_acc">
+        <img src="images/instagram.png" alt="Instagram" id="insta_acc">
+      </div>
+    </div>
+
+    <p id="copyright">©2025 EcoVision Inc.</p>
+  </footer>
+
+  <script>
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const currentEmail = localStorage.getItem("currentUser");
+    const currentUser = users.find(u => u.email === currentEmail);
+
+    if (!currentUser) {
+      window.location.href = "login.html";
+    } else {
+      document.getElementById("username").textContent = currentUser.name;
+      document.getElementById("useremail").textContent = currentUser.email;
+      document.getElementById("userpassword").textContent = currentUser.password;
+
+      const purchases = JSON.parse(localStorage.getItem(`${currentEmail}-purchases`)) || [];
+      const purchasesList = document.getElementById("purchases");
+
+      if (purchases.length > 0) {
+        purchasesList.innerHTML = "";
+        purchases.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          purchasesList.appendChild(li);
+        });
+      }
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+
+
+<footer>
+  <div class="left">
+      <a href="home.html"> <h4>Ecovision</h4> </a>
+      <a href="about_us.html"><p>About</p> </a>
+      <a href="login.html"><p>Login</p></a>
+      <a href="cart.html"><p >Cart</p></a>
+
+  </div>
+  
+  <div class="btns">
+      <a href="contact.html"> <button class="btn">Send Us Feedback</button> </a>
+      <button class="btn" onclick="opendonate()">Donate To Your Favourite Charity</button>        </div>
+
+  <div class="follow-us">
+      <h3> ↓ FOLLOW US ↓</h3>
+      <br>
+      <div>
+          <img src="images/facebook.png" alt="Faceboook Account" id="facebook_acc">
+          <img src="images/tiktok.png" alt="Tiktok Account" id="tiktok_acc">
+          <img src="images/instagram.png" alt="Instagram Account" id="insta_acc">
+      </div>
+      
+
+  </div>
+  <p id="copyright">©2025 EcoVision Inc.</p>
+</footer>
+</html>
